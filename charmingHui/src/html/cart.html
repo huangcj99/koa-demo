@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<link rel="stylesheet" href="http://localhost:8080/states/charmingHui/src/css/public.css">
+	<link rel="stylesheet" href="http://localhost:8080/states/charmingHui/src/css/homepage_common.css">
+	<link rel="stylesheet" href="http://localhost:8080/states/charmingHui/src/css/cart.css">
+	<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+</head>
+<body>
+	<header class="main_header">
+		<!-- 头部各入口 -->
+		<div class="header_access">
+			<div class="wrapper">
+				<ul class="access_left clear">
+					<li>
+						<img src="../img/zhuceyouli.gif" alt="礼品gif">
+					</li>
+					<li>
+						<a href="#">注册有礼</a>
+					</li>
+					<li>
+						<span>|</span>
+					</li>
+					<li>
+						<a href="#">登陆</a>
+					</li>
+					<li>
+						<span>|</span>
+					</li>
+					<li>
+						<a href="#">收藏</a>
+					</li>
+				</ul>
+				<ul class="access_right clear">
+					<li>
+						<a href="#">在线咨询</a>
+					</li>
+					<li>
+						<span>|</span>
+					</li>
+					<li>
+						<div class="pop_up_app">
+							<img src="../img/app.png" alt="二维码">
+							<span>扫码下载APP</span>
+						</div>
+						<a href="#">手机版</a>
+					</li>
+					<li>
+						<span>|</span>
+					</li>
+					<li>
+						<span></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- logo、slogan -->
+		<div class="header_logo">
+			<div class="wrapper">
+				<div class="logo_left">
+					<a href="#" class="logo" title="魅力惠MEI.COM 时尚奢品 限时折扣"></a>
+					<span class="slogan"></span>
+				</div>
+			</div>
+		</div>
+		<!-- 商品导航栏 -->
+		<div class="header_nav">
+			<div class="wrapper">
+				<ul class="nav_left clear">
+					<li>
+						<a href="#">首页</a>
+					</li>
+					<li>
+						<div class="pop_up_menu clear">
+							<div class="hot_activity">
+								<h4>热门活动</h4>
+								<ul class="hot_list">
+									<li>
+										<a href="#">sjkdhakjshdkjashdjkhasjdhas</a>
+									</li>
+									<li>
+										<a href="#">
+											askjhdjkashdkja
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											dasdas
+										</a>
+									</li>
+									<li>
+										<a href="#">sjkdhakjshdkjashdjkhasjdhas</a>
+									</li>
+									<li>
+										<a href="#">
+											askjhdjkashdkja
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											askjhdjkashdkja
+										</a>
+									</li>
+								</ul>
+								<div class="all_activity">
+									<a href="#">查看所有活动</a>
+								</div>
+							</div>
+							<div class="commodity">
+								<h4>商品分类</h4>
+								<ul class="cdy_list">
+									<li>
+										<a href="#">服装</a>
+									</li>
+									<li>
+										<a href="#">鞋履</a>
+									</li>
+									<li>
+										<a href="#">包袋</a>
+									</li>
+									<li>
+										<a href="#">手表&首饰</a>
+									</li>
+									<li>
+										<a href="#">配饰</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<a href="#">女士</a>
+					</li>
+					<li>
+						<a href="#">男士</a>
+					</li>
+					<li>
+						<a href="#">美妆</a>
+					</li>
+					<li>
+						<a href="#">家居</a>
+					</li>
+					<li>
+						<a href="#">婴童</a>
+					</li>
+					<li>
+						<a href="#">老佛爷奥莱</a>
+					</li>
+					<li>
+						<a href="#">即将推出</a>
+					</li>
+				</ul>
+				<ul class="nav_right">
+					<li>0</li>
+					<li>|</li>
+					<li>¥0.00</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	
+	<!-- 购物车主体 -->
+	<section class="main_container">
+		<div class="wrapper">
+			<!-- 购物车头部 -->
+			<div class="cart_title">
+				<h3>购物袋</h3>
+				<span>商品库存有限，建议尽快提交订单，闪购到心仪的商品;促销优惠将按比例分摊至商品中。</span>
+			</div>
+			<!-- 建议 -->
+			<div class="advice">
+				<a href="#">全场</a>
+				<span>满688元免运费</span>
+				<a href="#">去凑单></a>
+			</div>
+			<!-- 购物车内 -->
+			<div class="main_content">
+				<ul class="content_item clear">
+					<li class="select">在售</li>
+					<li>心愿单</li>
+					<li>已失效</li>
+				</ul>
+				<!-- 在售商品 -->
+				<div class="sale">
+					<ul class="table_head clear">
+						<li class="check_all check_point">
+							<span class="check"></span>
+							<span>全选</span>
+						</li>
+						<li class="info">商品信息</li>
+						<li class="price">单价</li>
+						<li class="count">数量</li>
+						<li class="coupon">优惠</li>
+						<li class="computed">小计</li>
+						<li class="del">操作</li>
+					</ul>
+					<p class="first_hand check_point">
+						<span class="check"></span>
+						<span>魅力惠直发</span>
+					</p>
+					<ul class="commodity">
+						<li>
+							<ul class="list clear">
+								<li class="check_point">
+									<span class="check"></span>
+								</li>
+								<li class="img">
+									<img src="../img/cart/1.jpg" alt="">
+								</li>
+								<li class="info">
+									<a href="#" class="comd_name">DUVETICA</a>
+									<a  href="#" class="introduction">橘红色连帽细横条纹衍缝线饰羽绒服</a>
+									<div class="specification">
+										<ul class="spf_info">
+											<li>
+												<span>颜色:</span>
+												<span>橘红色</span>
+											</li>
+											<li>
+												<span>尺寸:</span>
+												<span>48</span>
+											</li>
+										</ul>
+										<span class="modify">修改</span>
+									</div>
+								</li>
+								<li class="price">¥2,099.00</li>
+								<li class="count">
+									<ul class="clear">
+										<li class="less">-</li>
+										<li class="num">1</li>
+										<li class="add">+</li>
+										<li class="count_info">库存紧张</li>
+									</ul>
+								</li>
+								<li class="sale_off">¥0.00</li>
+								<li class="subtotal">¥2,099.00</li>
+								<li class="del">
+									<div>删除</div>
+								</li>	
+							</ul>
+						</li>
+					</ul>
+					<p class="coupon">
+						<span class="coupon_btn">优惠券</span>
+					</p>
+					<div class="final clear">
+						<ul class="check_count">
+							<li class="check_point">
+								<span class="check"></span>
+								<span>全选</span>
+							</li>
+							<li class="num">已选<strong>0</strong>件</li>
+							<li class="del">删除</li>
+						</ul>
+						<ul class="total">
+							<li>总价(不含运费)：</li>
+							<li class="total_computed">￥1,238.00</li>
+							<li class="computed_btn">结算</li>
+						</ul>
+					</div>
+				</div>
+				<!-- 心愿单 -->
+				<div class="wanted"></div>
+				<!-- 已失效 -->
+				<div class="disabled"></div>
+			</div>	
+		</div>
+	</section>
+
+	<footer class="main_footer init_a">
+		<div class="wrapper">
+			<ul class="footer_advantage clear">
+				<li>
+					<a href="#">
+						<span></span>
+						<span>100%品牌授权正品</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span></span>
+						<span>满688免运费</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span></span>
+						<span>7天无条件退款</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span></span>
+						<span>超值折扣</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span></span>
+						<span>9点限时闪购</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span></span>
+						<span>400 - 664 - 6698</span>
+					</a>
+				</li>
+			</ul>
+			<p class="footer_link">
+				<a href="#">关于魅力惠</a>
+				<a href="#">加入我们</a>
+				<a href="#">联系我们</a>
+				<a href="#">使用帮助</a>
+				<a href="#">使用规则</a>
+				<a href="#">隐私声明</a>
+				<a href="#">网站地图</a>
+			</p>
+			<p class="footer_copyright">
+				<span>COPYRIGHT©2016 杭州魅俪信息技术有限公司版权所有</span>
+				<span>浙ICP备16004860号-1</span>
+			</p>
+			<p class="footer_license">
+				<img src="../img/icon_badge.png" alt="">
+				<img src="../img/icon_badge3.png" alt="">
+			</p>
+		</div>
+	</footer>
+
+	<script src="http://localhost:8080/states/charmingHui/src/js/cart.js"></script>
+</body>
+</html>

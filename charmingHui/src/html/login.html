@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户登录</title>
+	<link rel="stylesheet" href="http://localhost:8080/states/charmingHui/src/css/public.css">
+	<link rel="stylesheet" href="http://localhost:8080/states/charmingHui/src/css/login.css">
+	<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+</head>
+<body>
+	<!-- 头部 -->
+	<header>
+		<div class="wrapper">
+			<div class="top_title">
+				<div class="logo"></div>
+				<div class="slogan"></div>
+			</div>
+		</div>
+	</header>
+	
+	<!-- 登录主体表单 -->
+	<section class="main_content">
+		<div class="wrapper">
+			<!-- 填写表单 -->
+			<div class="box">
+				<!-- 表单头部信息 -->
+				<div class="form_top">
+					<h3>会员登录</h3>
+					<div class="login">
+						<span>没有账号?</span>
+						<a href="#">免费注册</a>
+					</div>
+				</div>
+				<!-- 表单 -->
+			 	<ul class="form">
+				 	<li>
+				 		<span class="option">账户名:</span>
+				 		<input type="text" placeholder="" name="usr">
+				 		<span class="hint"></span>
+				 	</li>
+				 	<li>
+				 		<span class="option">密码:</span>
+				 		<input type="password" name="pwd">
+				 		<span class="hint"></span>
+				 	</li>
+					<li class="info">
+						<div class="login_btn">会员登录</div>
+						<span class="login_success"></span>
+						<span id="auto_login"></span>
+						<span>下次自动登录</span>
+						<a href="#">忘记密码</a>
+					</li>
+					<li class="login_path">
+						<span class="option">联名登录:</span>
+						<a href="#" class="weibo"></a>
+						<a href="#" class="alipay"></a>
+					</li>
+				</ul>
+				<!-- app扫描部分 -->
+			 	<div class="app_scan">
+			 		<div>
+			 			<img src="http://localhost:8080/states/charmingHui/src/img/app.png" alt="">
+			 		</div>
+			 		<div>扫描二维码或发送短信"MLH"到"12114"下载APP尊享独家优惠</div>
+			 	</div>
+		 	</div>
+		</div>
+	</section>
+
+	<!-- 底部 -->
+	<footer class="main_footer init_a">
+		<div class="wrapper">
+			<ul class="footer_advantage clear">
+				<li>
+					<a href="#">
+						<span></span>
+						<span>100%品牌授权正品</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span></span>
+						<span>满688免运费</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span></span>
+						<span>7天无条件退款</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span></span>
+						<span>超值折扣</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span></span>
+						<span>9点限时闪购</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span></span>
+						<span>400 - 664 - 6698</span>
+					</a>
+				</li>
+			</ul>
+			<p class="footer_copyright">
+				<span>COPYRIGHT©2016 杭州魅俪信息技术有限公司版权所有</span>
+				<span>浙ICP备16004860号-1</span>
+			</p>
+		</div>
+	</footer>
+
+	<script src="http://localhost:8080/states/charmingHui/src/js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+/*去除body的margin、padding并设置页面字体*/
+body{
+	margin: 0;
+	padding: 0;
+	font-family:Microsoft YaHei,Tahoma,Arial,Helvetica,sans-serif;
+}
+/*去除网站ul的margin、padding、点*/
+ul{
+	padding: 0;
+	margin: 0;
+	list-style:none;
+}
+/*束缚版面内容*/
+.wrapper{
+	width: 1000px;
+	margin:0 auto;
+}
+/*加入块并清除浮动*/
+.clear:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+/*初始化a标签的字体样式*/
+.init_a a{
+	text-decoration:none;
+	color:white;
+	font-size: 14px;
+}

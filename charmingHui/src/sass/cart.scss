@@ -1,0 +1,366 @@
+/*购物车部分*/
+.main_container{
+
+	.cart_title{
+		border-bottom:1px solid #ccc;
+		margin-top: 30px;
+
+		h3 {
+			display:inline-block;
+			margin: 0;
+			margin-bottom:10px;
+			font-size: 24px;			
+		}
+
+		span{
+			font-size: 14px;
+			float:right;
+			padding-top: 10px;
+			color:#ccc;
+		}
+	}
+
+	.advice {
+		padding: 10px 5px;
+		background-color:#fbe9e9;
+		margin:10px 0;
+
+		a:first-of-type {
+			display:inline-block;
+			width: 40px;
+			height: 20px;
+			background-color:#dd2828;
+			color:white;
+			text-decoration:none;
+			font-size: 12px;
+			line-height:20px;
+			text-align:center;
+			margin-left: 5px;
+			margin-right: 5px;
+		}
+
+		span {
+			color:#e22828;
+		}
+
+		a:last-of-type {
+			color:black;
+			font-size: 12px;
+			margin-left: 20px;
+		}
+
+		a:last-of-type:hover{
+			color:red;
+		}
+	}
+	
+	.main_content {
+		
+
+		.content_item{
+			li {
+				float:left;
+				padding: 10px 60px;
+				font-size: 20px;
+				cursor:pointer;
+			}
+		}
+		
+		.select {
+			font-weight: 700;
+			background-color:#eeeeee;
+		}
+
+		.sale {
+
+			.check_point{
+ 				.check{
+ 					display:inline-block;
+					width: 18px;
+					height: 18px;
+					margin-right: 2px;
+					position:relative;
+					top:3px;
+					cursor:pointer;
+					background:url('../img/cart/checkbtn.png');
+ 				}
+
+ 				.bg_check {
+					background:url('../img/cart/checkbtn.png') -18px 0 no-repeat;
+				}
+			}
+
+			.table_head {
+				padding: 20px 0;
+				width: 100%;
+				background-color:#eeeeee;
+
+				li {
+					float:left;
+					margin-right: 80px;
+				}
+
+				.check_all{
+					margin-left: 10px;
+					margin-right: 80px;
+
+					span{
+						cursor:pointer;
+					}
+				}
+
+				.info{
+					margin-right: 260px;
+				}
+
+				.del {
+					margin-right: 0;
+				}
+			}
+
+			.first_hand{
+				padding: 10px 0;
+				border-bottom: 1px solid #ccc;
+				padding-bottom: 20px;
+				padding-left: 10px;
+
+				span:last-child{
+					font-weight: 700;
+				}
+			}
+			
+			/*每一个商品*/
+			.commodity{
+				> li:after {
+					content:"";
+					display:block;
+					border:1px solid #ccc;
+				}
+
+				> li {
+					
+					.list{
+						
+	
+						> li {
+							height: 105px;
+							float:left;
+							margin: 10px 0 20px 0;
+							padding-bottom: 2px;
+						}
+
+						/*统一设置后部分li的宽，高，垂直与水平居中*/
+						.price,
+						.count,
+						.sale_off,
+						.subtotal,
+						.del{
+							width: 113px;
+							height: 100%;
+							line-height:105px;
+							text-align:center;
+						}
+
+						.check_point{
+							margin-right: 5px;
+							margin-left: 15px;
+
+							.check {
+								margin-top: 45px;
+							}
+						}
+						
+						.img{
+							border:1px solid #eee;
+							margin-right: 0;
+						}
+
+						.info {
+							width: 250px;
+							margin-left: 20px;
+							margin-right: 35px;
+
+							a {
+								display:block;
+								text-decoration:none;
+								color:black;
+							}
+
+							a:hover{
+								color:red;
+							}
+
+							.comd_name{
+								font-weight: 700;
+							}
+
+							.introduction{
+								font-size: 14px;
+							}
+
+							.specification{
+								width: 180px;
+								border:1px dotted #eee;
+								height: 40px;
+								margin-top: 10px;
+
+								.spf_info{
+									display:inline-block;
+									font-size: 13px;
+									color:#909090;
+									margin-top: 3px;
+								}
+
+								.modify {
+									display:inline-block;
+									float:right;
+									font-size: 11px;
+									background-color:#f5f5f5;
+									cursor:pointer;
+									height: 100%;
+									color:#909090;
+									padding: 0 10px;
+									line-height:40px;
+								}
+							}
+						}
+
+						.count {
+							width: 95px;
+							height: 30px;
+							position:relative;
+							text-align:center;
+							line-height:30px;
+							margin-top: 45px;
+							margin-left: 18px;
+
+							li {
+								width: 30px;
+								height: 100%;
+								float:left;
+							}
+
+							.less,.add{
+								background-color:#f5f5f5;
+								cursor:pointer;
+							}
+
+							.count_info{
+								width: 90px;
+								height: 20px;
+								position:absolute;
+								top:30px;
+								font-size: 12px;
+								line-height:20px;
+								border:1px solid red;
+								color:red;
+								margin-top: 5px;
+							}
+						}
+
+						.del{
+							margin-right: 0;
+
+							div {
+								height: 20px;
+								border:1px solid #f5f5f5;
+								padding:5px 10px;
+								line-height:20px;
+								margin-top: 35px;
+								cursor:pointer;
+							}
+						}
+					}	
+				}
+			}
+			
+			>.coupon {
+				margin:40px 10px;
+
+				.coupon_btn {
+					text-align:center;
+					border:1px solid black;
+					font-size: 12px;
+					padding: 3px 30px;
+					cursor: pointer;
+				}
+			}
+			
+			> .final{
+				height: 58px;
+				background-color:#eee;
+				margin-bottom: 30px;
+
+				.check_count {
+					height: 100%;
+					float:left;
+					margin-left: 10px;
+
+					li {
+						float:left;
+						margin-right: 15px;
+						line-height:58px;
+					}
+					
+					.num {
+						color:#909090;
+
+						strong {
+							font-size: 20px;
+							color:red;
+						}
+					}
+					.del {
+						height: 20px;
+						border:1px solid #909090;
+						padding:5px 30px;
+						line-height:20px;
+						cursor:pointer;
+						background-color:white;
+						margin-top: 13px;
+					}
+				}
+
+				.total {
+					height:100%;
+					float:right;
+
+					li {
+						float:left;
+					}
+
+					li:first-child{
+						margin-top: 10px;
+					}
+
+					.total_computed {
+						color:red;
+						font-weight: 700;
+						font-size: 25px;
+						margin-right: 10px;
+					}
+
+					.computed_btn {
+						width: 120px;
+						height: 100%;
+						background-color:red;
+						color:white;
+						line-height:58px;
+						text-align:center;
+						cursor:pointer;
+					}
+				}
+			}
+		}
+
+		.wanted {
+			
+		}
+
+		.disabled {
+			
+		}
+	}
+}
+
+

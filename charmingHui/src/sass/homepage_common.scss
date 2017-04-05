@@ -1,0 +1,436 @@
+/*头部*/
+.main_header{
+	width: 100%;
+	//头部入口
+	.header_access{
+		width: 100%;
+		height: 30px;
+		background-color:#f2f2f2;
+		font-size:12px;
+
+		a{
+			color:black;
+			text-decoration:none;
+		}
+		.access_left{
+			float:left;
+			line-height:30px;
+
+			li {
+				float:left;
+				padding:0 8px;
+			}
+
+			li:first-child {
+				img {
+					display:inline-block;
+					padding-top: 3px;
+				}
+			}
+
+			li:nth-child(2){
+				padding-left: 0;
+
+				a{
+					color:red;
+				}
+			}
+
+			li:nth-child(2n):hover{
+				a{
+					color:red;
+				}
+			}
+		}
+
+		.access_right{
+			float:right;
+			line-height:30px;
+			margin-right: 73px;
+
+			li {
+				display:inline-block;
+				padding:0 8px;
+			}
+
+			li:nth-child(3){
+				position:relative;
+				
+				//弹窗
+				.pop_up_app{
+					padding: 10px 5px 0 5px;
+					position:absolute;
+					top:30px;
+					left:-14px;
+					background-color:white;
+					text-align:center;
+					z-index:10;
+					display:none;
+
+					img {
+						display:block;
+					}
+				}
+			}
+			li:last-child{
+				span {
+					display:inline-block;
+					width: 20px;
+					height: 17px;
+					background:url('http://localhost:8080/charmingHui/src/img/base_z.png') -604px -329px;
+					position:relative;
+					top:3px;
+				}
+			}
+
+			li:nth-child(3):hover{
+				a{
+					color:red;
+				}
+				.pop_up_app{
+					display:block;
+				}
+			}
+		}
+	}
+	
+	//主页logo
+	.header_logo{
+		width: 100%;
+		height: 90px;
+
+		.logo_left {
+
+			.logo {
+				margin-left: -208px;
+				display:inline-block;
+				width: 188px;
+				height: 90px;
+				background:url('http://localhost:8080/charmingHui/src/img/base_z.png') -853px -298px no-repeat;
+			}
+
+			.slogan{
+				display:inline-block;
+				width: 135px;
+				height: 90px;
+				background:url('http://localhost:8080/charmingHui/src/img/base_z.png') -905px -75px no-repeat;
+				margin-left: 23px;
+			}
+		}
+	}
+
+	//导航
+	.header_nav{
+		width: 100%;
+		height: 42px;
+		background-color:black;
+		font-size:14px;
+		color:white;
+		line-height:42px;
+
+		.nav_left{
+			float:left;
+			
+			
+			> li{
+				float:left;
+				margin-right: 54px;
+				position:relative;
+				
+				> a{
+					display:block;
+					height: 42px;
+					color:white;
+					text-decoration:none;
+				}
+				
+				//弹窗
+				.pop_up_menu {
+					width: 630px;
+					position:absolute;
+					color:black;
+					top:42px;
+					background-color:white;
+					box-shadow:2px -1px 20px -7px black;
+					z-index:10;
+					display:none;
+					
+					a{
+						color:#666;
+						text-decoration:none;
+					}
+					.hot_activity{
+						width: 310px;
+						float:left;
+						margin:10px 0;
+						border-right: 1px solid #e7e7e7;
+
+						h4 {
+							margin: 0 20px;
+							padding: 0;
+							border-bottom: 1px solid #e7e7e7;
+						}
+
+						.hot_list{
+							margin-left: 35px;
+							margin-top: 20px;
+							li {
+								margin: -15px;
+
+								a {
+									font-size: 14px;
+								}
+							}
+
+							li{
+								a:hover{
+									color:red;
+								}
+							}
+							
+						}
+
+						.all_activity{
+							float:right;
+							margin-right: 20px;
+							font-size: 13px;
+
+							a {
+								color:black;								
+							}
+
+						}
+					}
+
+					.commodity{
+						width: 310px;
+						float:right;
+						margin-top: 10px;
+
+						h4 {
+							margin: 0 20px 0 10px;
+							padding: 0;
+							border-bottom: 1px solid #e7e7e7;
+						}
+
+						.cdy_list{
+							margin-left: 35px;
+							margin-top: 20px;
+							li {
+								margin: -22px;
+								a{
+									font-size: 12px;
+								}
+							}
+
+							li{
+								a:hover{
+									color:red;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			> li:first-child{
+				margin-left: 10px;
+				a{
+					color:red;
+				}
+			}
+
+			> li:hover {
+				> a{
+					color:red;
+				}
+				.pop_up_menu{
+					display:block;
+				}
+			}
+		}
+
+		.nav_right{
+			float:right;
+			
+			> li{
+				float:left;
+				margin-right: 16px;
+			}
+
+			> li:first-child{
+				width: 22px;
+				height: 42px;
+				color:#666;
+				padding: 0 0 0 8px; 
+				background:url('http://localhost:8080/charmingHui/src/img/base_z.png') -1017px -220px;
+			}
+		}
+	}
+}
+
+/*底部*/
+.main_footer{
+	width: 100%;
+	height: 235px;
+	background-color:#f2f2f2;
+	text-align:center;
+
+	a{
+		color:black;
+	}
+	.footer_advantage {
+		text-align:center;
+		
+		li {
+			float:left;
+			border-right:1px solid black;
+			margin:30px 0 22px 0;
+			
+
+			a{
+				width: 165px;
+				display:block;
+				font-size: 12px;
+
+				span:first-child{
+					display:block;
+					width: 44px;
+					height: 28px;
+					margin:0 auto;
+					position:relative;
+					left:9px;
+					margin-bottom:8px;
+				}
+			}
+		}
+	
+		@mixin icon($x,$y){
+			background:url('http://localhost:8080/charmingHui/src/img/base_z.png') $x $y no-repeat;
+		}
+		
+		li:nth-child(1){
+			a{
+				span:first-child{
+					@include icon(-221px,-152px);
+				}
+			}
+
+			
+		}
+		li:nth-child(1):hover{
+			a{
+				span:first-child{
+					@include icon(-221px,-270px);
+				}
+			}
+		}
+
+		li:nth-child(2){
+			a{
+				span:first-child{
+					@include icon(-605px,-108px);
+					left:4px;
+				}
+			}
+		}
+
+		li:nth-child(2):hover{
+			a{
+				span:first-child{
+					@include icon(-605px,3px);
+				}
+			}
+		}
+
+		li:nth-child(3){
+			a{
+				span:first-child{
+					@include icon(-220px,-387px);
+				}
+			}
+		}
+
+		li:nth-child(3):hover{
+			a{
+				span:first-child{
+					@include icon(-371px,-235px);
+				}
+			}
+		}
+
+		li:nth-child(4){
+			a{
+				span:first-child{
+					@include icon(-487px,-0px);
+				}
+			}
+		}
+
+		li:nth-child(4):hover{
+			a{
+				span:first-child{
+					@include icon(-487px,-112px);
+				}
+			}
+		}
+
+		li:nth-child(5){
+			a{
+				span:first-child{
+					@include icon(-371px,-350px);
+				}
+			}
+		}
+		
+		li:nth-child(5):hover{
+			a{
+				span:first-child{
+					@include icon(-371px,-463px);
+				}
+			}
+		}
+
+		li:nth-child(6){
+			a{
+				span:first-child{
+					@include icon(-371px,-118px);
+				}
+			}
+		}
+
+		li:nth-child(6):hover{
+			a{
+				span:first-child{
+					@include icon(-371px,0px);
+				}
+			}
+		}
+
+	}
+
+	.footer_link{
+		margin: 0;
+
+		a{
+			font-size: 12px;
+			margin-right: 28px;
+		}
+
+		a:hover{
+			color:red;
+		}
+	}
+
+	.footer_copyright{
+		font-size: 12px;
+		margin-top: 20px;
+	}
+
+	.footer_license{
+		img:first-child{
+			margin-right: 20px;
+		}
+	}
+
+}

@@ -1,0 +1,350 @@
+/*主要内容*/
+.main_container{
+	.banner{
+		width: 100%;
+		position:relative;
+
+		img{
+			display:inline-block;
+			margin:0 auto;
+			position:absolute;
+			left: 0;
+			right: 0;
+		}
+	}
+
+	.main_content{
+
+		.scroll_page{
+			width: 1040px;
+			background-color:white;
+			margin:0 auto;
+			position:relative;
+			top:444px;
+			
+			.top_banner{
+				padding: 20px 20px 0 20px;
+				margin-bottom:30px;
+			}
+
+			.recommend{
+				margin-right:20px;
+				> p{
+					margin-left: 20px;
+					font-size: 25px;
+					margin-top: 0;
+				}
+				.commodity{
+					> li{
+						float:left;
+						margin-left: 20px;
+					}
+
+					> li:not(.info){
+						position:relative;
+						margin-bottom: 20px;
+
+						.shade{
+							width: 320px;
+							height: 192px;
+							background-color:black;
+							opacity:0.6;
+							position:absolute;
+							text-align:center;
+							display:none;
+							z-index:10;
+							cursor:pointer;
+							
+							span {
+								padding:90px 20px;
+								display:inline-block;
+								color:white;
+								opacity:1;
+								font-size: 13px;
+							}
+						}
+						
+						a{
+							width: 320px;
+							height: 192px;
+							display:block;
+							position:relative;
+							overflow: hidden;
+							img{
+								width: 320px;
+								height: 192px;
+								position:absolute;
+								transition: transform 1.5s;
+							}
+						}
+
+						p {
+							margin: 0;
+							padding: 12px 0 12px 12px;
+							background-color:#f2f2f2;	
+							font-size: 12px;
+
+							> span:last-child {
+								float:right;
+								margin-right: 5px;
+								color:red;
+
+								span:first-child{
+									font-size: 16px;
+								}
+							}
+						}
+					}
+
+					> li:not(.info):hover{
+						.shade{
+							display:block;
+						}
+
+						a{
+							img{
+								transform:scale(1.15,1.1);
+							}
+						}
+					}
+				}
+			}
+
+			.today_recmd{
+				.commodity{
+					> li{
+						float:right;
+					}
+				}
+			}
+
+			.recommend_menu{
+				.info{
+					width: 320px;
+					height: 484px;
+					background:url('http://localhost:8080/charmingHui/src/img/title.jpg') no-repeat;
+					color:white;
+
+					
+					.container{
+						width: 200px;
+						text-align:center;
+						margin:0 auto;
+						margin-top: 230px;
+
+						p{
+							padding: 0;
+							margin: 0;
+						}
+
+						p:nth-child(1),p:nth-child(2){
+							font-size:36px;
+						}
+
+						.cdy_list{
+							width: 120px;
+							border-top:1px solid white;
+							border-bottom:1px solid white;
+							padding: 10px 50px;
+							padding-bottom: 15px;
+							position:relative;
+							left:-5px;
+							
+							li{
+								float:left;
+								margin:5px 10px 0px 0px
+							}
+							li:last-child{
+								position:relative;
+								left:25px;
+								margin-top: 15px;
+								font-size: 14;
+							}
+
+							a:hover{
+								color:red;
+							}
+						}
+					}
+				}
+
+				.men{
+					background:url('http://localhost:8080/charmingHui/src/img/title.jpg') -320px 0 no-repeat;
+				}
+
+				.beauty{
+					background:url('http://localhost:8080/charmingHui/src/img/title.jpg') -640px 0 no-repeat;
+				}
+				
+				.lifestyle{
+					background:url('http://localhost:8080/charmingHui/src/img/title.jpg') -960px 0 no-repeat;
+
+					.container{
+						color:black;
+
+						.cdy_list{
+							width: 160px;
+							padding: 10px 20px 10px 30px;
+							border-top:1px solid black;
+							border-bottom:1px solid black;
+							
+							a{
+								color:black;
+							}
+
+							li:nth-child(1){
+								margin-left: 20px;
+							}
+							li:nth-last-child(2){
+								margin-left: 30px;
+							}
+							li:last-child{
+								margin-left: 15px;
+							}
+						}
+					}
+				}
+
+				.kids{
+					background:url('http://localhost:8080/charmingHui/src/img/title.jpg') -1280px 0 no-repeat;
+				}
+
+			}
+
+			.future_activities{
+				> p{
+					margin-left: 20px;
+					font-size: 25px;
+				}
+		
+				.date{
+					margin-left: 20px;
+					display:inline-block;
+					float:left;
+					font-size: 14px;
+
+					li{
+						float:left;
+						padding: 2px 30px;
+						position:relative;
+						border-right:1px solid black;
+						cursor: pointer;
+					}
+
+					li:first-child{
+						border-left: 1px solid black;
+					}
+
+					.underline:after{
+						width: 80px;
+						content:"";
+						position:absolute;
+						top:28px;
+						left:5px;
+						display:block;
+						border-bottom:3px solid black;
+					}
+				}
+				
+				.update_time{
+					margin-left: 20px;
+					display:inline-block;
+					float:right;
+					font-size: 16px;
+
+					strong{
+						font-size: 22px;
+						color:red;
+						font-weight:500;
+						position:relative;
+						top:3px;
+					}
+				}
+
+				.activities{
+					margin-left: 20px;
+					clear:both;
+		
+					.act_list{
+						li{
+							border:1px solid #e7e7e7;
+							width: 318px;
+							float:left;
+							margin:0 20px 20px 0;
+							position:relative;
+
+							p{
+								margin: 0;
+								padding: 0;
+							}
+
+							.pop_up{
+								display:none;
+
+								.shadow{
+									width: 318px;
+									height: 100%;
+									background-color:black;
+									opacity:0.6;
+									position:absolute;
+									// display:none;
+								}
+
+								.subscribe{
+										width: 60px;
+										height: 30px;
+										background-color:red;
+										text-align:center;
+										line-height:30px;
+										opacity:1;
+										position:absolute;
+										margin:auto;
+										top: 0;
+										bottom: 0;
+										left: 0;
+										right: 0;
+								}
+							}
+
+							img{
+								float:left;
+							}
+
+							.info{
+								width: 168px;
+								height: 90px;
+								background-color:#f2f2f2;
+								float:left;
+								font-size: 12px;
+
+								p:first-child{
+									margin:15px 0 18px 10px; 
+								}
+								p:last-child{
+									margin-left: 10px;
+									color:red;
+
+									strong{
+										font-size: 16px;
+										
+									}
+								}
+							}
+						}
+
+						li:hover{
+							.pop_up{
+								display:block;
+							}
+						}
+					}
+				}
+
+			}
+		}
+	}
+}
+
+.main_footer{
+	margin-top: 444px;
+}

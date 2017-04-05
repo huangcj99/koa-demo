@@ -1,0 +1,392 @@
+header{
+	width: 100%;
+	height: 90px;
+	background:url('http://localhost:8080/charmingHui/src/img/register/main_bg.png') 0 -20px;
+
+	.top_title {
+		width: 351px;
+		height: 95px;
+		margin:0 auto;
+
+		.logo {
+			display:inline-block;
+			width: 188px;
+			height: 90px;
+			background:url('http://localhost:8080/charmingHui/src/img/base_z.png') -853px -298px no-repeat;
+		}
+
+		.slogan{
+			display:inline-block;
+			width: 135px;
+			height: 90px;
+			background:url('http://localhost:8080/charmingHui/src/img/base_z.png') -905px -75px no-repeat;
+			margin-left: 23px;
+		}
+	}
+}
+
+
+.main_content{
+	width: 100%;
+	height: 610px;
+	margin:0;
+
+	background:url('http://localhost:8080/charmingHui/src/img/register/main_bg.png') 0 -260px;
+	
+	.wrapper {
+		height: 610px;
+		background:url('http://localhost:8080/charmingHui/src/img/register/bg.jpg') 10px -110px no-repeat;
+	}
+
+	.box {
+		width: 320px;
+		position:relative;
+		left:475px;
+		top:30px;
+
+		.form_top{
+			width: 233px;
+			margin-left: 85px;
+
+			h3 {
+				display:inline-block;
+				margin: 0;
+				padding: 0;
+				font-size: 16px;
+				margin-bottom:10px;
+			}
+
+			.login{
+				display:inline-block;
+				float:right;
+
+				span {
+					font-size: 12px;
+				}
+
+				a{
+					color:red;
+					font-size: 14px;
+				}
+			}
+
+			.info {
+				font-size: 11px;
+				color:red;
+				margin-bottom:5px;
+			}
+		}
+
+		.form {
+			margin: 0;
+			padding: 0;
+			border-bottom: 1px solid #666;
+
+			li {
+				position:relative;
+				margin-bottom:5px;
+
+				.option {
+					display:inline-block;
+					width: 70px;
+					height: 36px;
+					text-align:right;
+					font-size: 12px;
+					margin-right: 10px;
+					line-height:36px;
+				}
+
+				input{
+					width: 220px;
+					height: 25px;
+					background-color:#f7f7f9;
+					border:1px solid #666;
+					font-size: 12px;
+					padding: 2px 6px;
+				}
+
+				.hint{
+					display:block;
+					width: 200px;
+					margin-left: 85px;
+					font-size: 12px;
+					color:#db2725;
+				}
+			}
+
+			li:nth-child(4){
+				
+				input{
+					width: 110px;
+				}
+
+				.verify_photo{
+					display:inline-block;
+					width: 104px;
+					height: 29px;
+					border:1px solid #666;
+					background-color:white;
+					position:absolute;
+					left:213px;
+					top:3px;
+					cursor:pointer;
+
+					span {
+						display:inline-block;
+						position:absolute;
+					}
+
+					span:nth-child(1){
+						top:2px;
+						left:3px;
+						z-index:10;
+					}
+
+					span:nth-child(2){
+						top:10px;
+						left:18px;
+					}
+
+					span:nth-child(3){
+						top:5px;
+						left:50px;
+					}
+
+					span:nth-child(4){
+						top:9px;
+						left:80px;
+					}
+				}
+			}
+
+			li:nth-child(5){
+
+				input {
+					width: 110px;
+				}
+
+				.getCode {
+					display:inline-block;
+					width: 104px;
+					height: 29px;
+					border:1px solid #666;
+					background-color:white;
+					position:absolute;
+					left:213px;
+					top:3px;
+					cursor:pointer;
+					font-size: 11px;
+					line-height:29px;
+					text-align:center;
+				}
+			}
+
+			.info{
+				width: 220px;
+				margin-left: 85px;
+				font-size: 11px;
+
+				.register_btn{
+					width: 233px;
+					background-color:#db2725;
+					color:white;
+					text-align:center;
+					padding: 7px 0;
+					font-size: 14px;
+					cursor:pointer;
+				}	
+				
+				.register_success {
+					display:inline-block;
+					width: 233px;
+					font-size: 15px;
+					color:red;
+					text-align:center;
+					margin-top: 10px;
+				}
+
+				p:nth-of-type(1){
+					a{
+						color:black;
+					}
+				}
+				
+				p:nth-of-type(2){
+					margin-bottom:20px;
+
+					span:first-child{
+						display:inline-block;
+						width: 11px;
+						height: 11px;
+						background-color:black;	
+					}
+				}
+
+			}
+		}
+
+		.app_scan{
+			margin-left: 85px;
+			margin-top: 25px;
+
+			div {
+				display:inline-block;
+				text-align:center;
+				font-size: 11px;
+			}
+			div:last-child{
+				width: 110px;
+				height: 43px;
+				position:relative;
+				top:-25px;
+				left: 10px;
+				line-height:20px;
+			}
+		}
+	}
+}
+
+.main_footer{
+	width: 100%;
+	padding-bottom: 17px;
+	text-align:center;
+	background:url('http://localhost:8080/charmingHui/src/img/register/main_bg.png') 0 -930px;
+
+	a{
+		color:black;
+	}
+	.footer_advantage {
+		text-align:center;
+		
+		li {
+			float:left;
+			border-right:1px solid black;
+			margin:10px 0 22px 0;
+			
+
+			a{
+				width: 165px;
+				display:block;
+				font-size: 12px;
+
+				span:first-child{
+					display:block;
+					width: 44px;
+					height: 28px;
+					margin:0 auto;
+					position:relative;
+					left:9px;
+					margin-bottom:8px;
+				}
+			}
+		}
+	
+		@mixin icon($x,$y){
+			background:url('http://localhost:8080/charmingHui/src/img/base_z.png') $x $y no-repeat;
+		}
+		
+		li:nth-child(1){
+			a{
+				span:first-child{
+					@include icon(-221px,-152px);
+				}
+			}
+
+			
+		}
+		li:nth-child(1):hover{
+			a{
+				span:first-child{
+					@include icon(-221px,-270px);
+				}
+			}
+		}
+
+		li:nth-child(2){
+			a{
+				span:first-child{
+					@include icon(-605px,-108px);
+					left:4px;
+				}
+			}
+		}
+
+		li:nth-child(2):hover{
+			a{
+				span:first-child{
+					@include icon(-605px,3px);
+				}
+			}
+		}
+
+		li:nth-child(3){
+			a{
+				span:first-child{
+					@include icon(-220px,-387px);
+				}
+			}
+		}
+
+		li:nth-child(3):hover{
+			a{
+				span:first-child{
+					@include icon(-371px,-235px);
+				}
+			}
+		}
+
+		li:nth-child(4){
+			a{
+				span:first-child{
+					@include icon(-487px,-0px);
+				}
+			}
+		}
+
+		li:nth-child(4):hover{
+			a{
+				span:first-child{
+					@include icon(-487px,-112px);
+				}
+			}
+		}
+
+		li:nth-child(5){
+			a{
+				span:first-child{
+					@include icon(-371px,-350px);
+				}
+			}
+		}
+		
+		li:nth-child(5):hover{
+			a{
+				span:first-child{
+					@include icon(-371px,-463px);
+				}
+			}
+		}
+
+		li:nth-child(6){
+			a{
+				span:first-child{
+					@include icon(-371px,-118px);
+				}
+			}
+		}
+
+		li:nth-child(6):hover{
+			a{
+				span:first-child{
+					@include icon(-371px,0px);
+				}
+			}
+		}
+
+	}
+	
+	.footer_copyright{
+		font-size: 12px;
+		margin:0;
+	}
+}
