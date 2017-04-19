@@ -144,9 +144,19 @@ exports.sessionLogin = function *() {
 };
 
 exports.sessionDel = function *() {
-    this.session = null;
-    this.response.body = JSON.stringify({
-        "status":true,
-        "info":"删除成功"
-    });
+    let koaSid = this.cookies.get('koa.sid');
+    let delKoaSid = yield redisClient.delAsync(`koa:sess:${koaSid}`);
+
+    // console.log(delKoaSid);
+    if ( delKoaSid ) {
+        this.response.body = JSON.stringify({
+            "status":true,
+            "info":"登出成功"
+        });
+    }else {
+        this.response.body = JSON.stringify({
+            "status":false,
+            "info":"登出失败"
+        })
+    }
 };
